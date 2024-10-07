@@ -120,8 +120,8 @@ export async function DELETE(
     });
 
     return NextResponse.json({ message: "Category deleted" }, { status: 200 });
-  } catch (error: any) {
-    console.log("[CATEGORY_ID_DELETE]", error.message);
+  } catch (error) {
+    console.log("[CATEGORY_ID_DELETE]", error);
     return NextResponse.json({ message: "Internal error" }, { status: 500 });
   }
 }

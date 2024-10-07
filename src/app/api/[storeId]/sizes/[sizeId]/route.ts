@@ -114,8 +114,8 @@ export async function DELETE(
     });
 
     return NextResponse.json({ message: "Size deleted" }, { status: 200 });
-  } catch (error: any) {
-    console.log("[SIZE_ID_DELETE]", error.message);
+  } catch (error) {
+    console.log("[SIZE_ID_DELETE]", error);
     return NextResponse.json({ message: "Internal error" }, { status: 500 });
   }
 }
