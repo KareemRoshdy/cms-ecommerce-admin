@@ -3,7 +3,6 @@ import { NextRequest, NextResponse } from "next/server";
 
 import { stripe } from "@/lib/stripe";
 import prisma from "@/lib/db";
-import { connect } from "http2";
 
 const corsHeaders = {
   "Access-Control-Allow-Origin": "*",

@@ -167,7 +167,6 @@ const ProductForm: React.FC<ProductFormProps> = ({
                     disabled={loading}
                     onChange={(url) => {
                       field.onChange([...field.value, { url }]);
-                      console.log(...field.value);
                     }}
                     onRemove={(url) =>
                       field.onChange([
@@ -335,7 +334,6 @@ const ProductForm: React.FC<ProductFormProps> = ({
                   <FormControl>
                     <Checkbox
                       checked={field.value}
-                      //@ts-ignore
                       onCheckedChange={field.onChange}
                     />
                   </FormControl>
@@ -358,7 +356,6 @@ const ProductForm: React.FC<ProductFormProps> = ({
                   <FormControl>
                     <Checkbox
                       checked={field.value}
-                      //@ts-ignore
                       onCheckedChange={field.onChange}
                     />
                   </FormControl>

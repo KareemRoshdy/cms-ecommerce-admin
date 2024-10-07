@@ -21,7 +21,6 @@ import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { Loader } from "lucide-react";
 import toast from "react-hot-toast";
-import { useRouter } from "next/navigation";
 
 const formSchema = z.object({
   name: z.string().min(1),
@@ -30,8 +29,6 @@ const formSchema = z.object({
 export const StoreModal = () => {
   const storeModal = useStoreModal();
   const [isLoading, setIsLoading] = useState(false);
-
-  const router = useRouter();
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),

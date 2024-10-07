@@ -1,6 +1,5 @@
 import { CreditCard, DollarSign, Package } from "lucide-react";
 
-import prisma from "@/lib/db";
 import { formatter } from "@/lib/utils";
 import Heading from "@/components/Heading";
 import { Separator } from "@/components/ui/separator";
